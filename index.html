@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sba7oo Ta7dy</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./all.css"> -->
+</head>
+<body>
+    <div class="container">
+        <div class="team-area">
+            <div class="team-a">
+                <div class="team-photo" >
+                    <img id="upload-image" src="./img/teamA.jpg" alt="team-photo">
+                </div><!-- /team-photo -->
+                <h3 id="team-a-name">team A <p class="scoreA">2</p></h3>
+            </div>
+            <div id="counter">30:000</div>
+            <audio id="audio" src="./audio/audio.mp3"></audio>
+            <div class="team-b">
+                <h3 id="team-b-name">team B <p class="scoreB">2</p></h3>
+                <div class="team-photo" >
+                    <img id="upload-image2"src="./img/teamB.jpg" alt="team 2">
+                </div><!-- /team-photo -->
+                
+            </div>
+        </div><!-- /form-photo -->
+        <div class="form-container "id="divv">
+            <div class="form-content">
+                <div class="logo">
+                    <div>
+                    <img src="./img/sba7oo.jpg" alt="Sba7oo logo">
+                    </div>
+                </div><!-- /logo -->
+                <div class="team-input">
+                <div class="team-name" >
+                    <label for="name">team A</label>
+                    <input onchange="teamName(this)" type="text" name="" value="" id="name-a" placeholder="Enter your team name" required>
+                </div><!-- /team-name -->
+                <div class="team-name" >
+                    <label for="name">team B</label>
+                    <input onchange="teamName(this)" type="text" name="" value="" id="name-b" placeholder="Enter your team name" required>
+                </div><!-- /team-name -->
+                <div class="team-name" >
+                    <label >team A img</label>
+                    <input onchange="change1(this)"  type="file" name="" id="name-a-img" >
+                </div><!-- /team-name -->
+                <div class="team-name" >
+                    <label >team B img</label>
+                    <input  onchange="change2(this)" type="file" name="" id="name-b-img" >
+                </div><!-- /team-name -->
+                <input onclick="hide()" type="button" value="submit" id="smbt" >
+            </div><!-- .team-input -->
+        </div><!-- /form-content -->
+        </div><!-- /form-container -->
+        <div class="game-container">
+            <div class="game-content">
+                <div class="game-photo">
+                    <div class="front">
+                    </div><!-- /front -->
+                    <div class="back" >
+                        <img src="./img/19.jpg" alt=""id="guess">
+                    </div><!-- /back -->
+                </div><!-- /gem-photo -->
+                <div class="player-title">
+                    <h3 id="plyr-name">
+                        sba7oo ta7dy
+                    </h3>
+                </div><!-- /player-title -->
+                <div class="true-false">
+                    <button id="true" class="btn check">true</button>
+                    <button id="false" class="btn check">false</button>
+                <input onclick="play()" id="startButton" type="button"  class="btn" value="play">
+            </div><!-- /true-false -->
+            </div><!-- /game-content -->
+        </div><!-- /gamae-container -->
+    </div><!-- container -->
+    <script src="./js/script.js">
+        
+    </script>
+</body>
+</html>
